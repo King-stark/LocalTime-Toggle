@@ -13,3 +13,15 @@ sudo chmod +x fix_time_osx.sh
 
 If all went well, upon pressing enter on that last command, you should notice the time changed again.
 Sync the clock with the internet, or manually correct the time, and you're done!
+
+### Windows
+```
+Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+```
+Log in to macos synchronization time completed.
+
+### Macos
+```
+sudo sh -c "$(curl -kfsSL https://raw.githubusercontent.com/King-stark/LocalTime-Toggle/master/fix_time_osx.sh)"
+```
+Synchronization time completed.
