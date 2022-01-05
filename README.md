@@ -14,6 +14,8 @@ sudo chmod +x fix_time_osx.sh
 If all went well, upon pressing enter on that last command, you should notice the time changed again.
 Sync the clock with the internet, or manually correct the time, and you're done!
 
+***If you don’t have a relative network environment, please refer to the local way made by [milaoshu1020](https://gitee.com/milaoshu1020/LocalTime-Toggle), or use the way under windows***
+
 ### Windows
 ```
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
